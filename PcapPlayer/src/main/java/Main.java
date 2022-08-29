@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        final Pcap pcap = Pcap.openStream("C:\\Users\\n.hans\\Desktop\\VMFDatafromCORE.pcap");
+        final Pcap pcap = Pcap.openStream(%PATH_TO_PCAP_FILE%);
         InetAddress group = InetAddress.getByName("239.5.192.4");
         MulticastSocket socket = new MulticastSocket(1581);
         socket.joinGroup(group);
